@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                js: 'sumTwo',
-                python: 'sum_two'
+                js: 'reverseRoman',
+                python: 'reverse_roman'
             }
         });
         io.start();
