@@ -13,7 +13,7 @@
 </p>
 
 <p>
-    <strong>Output: </strong> int. Decimal representation of the give numeral
+    <strong>Output: </strong>int. Decimal representation of the give numeral
 </p>
 
 
@@ -22,11 +22,20 @@
     <p>
         <strong>Example:</strong>
     </p>
-<pre class="brush: python">checkio('VI') == 6
-checkio('LXXVI') == 76
-checkio('CDXCIX') == 499
-checkio('MMMDCCCLXXXVIII') == 3888</pre>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: python">reverseRoman('VI') == 6
+reverseRoman('LXXVI') == 76
+reverseRoman('CDXCIX') == 499
+reverseRoman('MMMDCCCLXXXVIII') == 3888</pre>
+{% else %}
+<pre class="brush: python">reverse_roman('VI') == 6
+reverse_roman('LXXVI') == 76
+reverse_roman('CDXCIX') == 499
+reverse_roman('MMMDCCCLXXXVIII') == 3888</pre>
+{% endif %}
 </div>
+
+
 
 <p>
     <strong>Precondition:</strong>
