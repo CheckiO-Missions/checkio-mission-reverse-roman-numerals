@@ -6,7 +6,6 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var $tryit;
 
         var io = new extIO({
-            multipleArguments: true,
             functions: {
                 js: 'reverseRoman',
                 python: 'reverse_roman'
