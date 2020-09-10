@@ -1,15 +1,30 @@
-"use strict";
+import assert from "assert";
 
-function reverseRoman(roman) {
-    return 0;
+function reverseRoman(data: string): number {
+    // your code here
+    return 1;
 }
 
-var assert = require('assert');
+console.log('Example:');
+console.log(reverseRoman('I'));
 
-if (!global.is_checking) {
-    assert.equal(reverseRoman('VI'), 6, "First")
-    assert.equal(reverseRoman('LXXVI'), 76, "Second")
-    assert.equal(reverseRoman('CDXCIX'), 499, "Third")
-    assert.equal(reverseRoman('MMMDCCCLXXXVIII'), 3888, "Forth")
-    console.log("Coding complete, Cesar? Click 'Check' to review your tests and earn cool rewards!");
-}
+// These "asserts" are used for self-checking
+assert.equal(reverseRoman('I'), 1);
+assert.equal(reverseRoman('X'), 10);
+assert.equal(reverseRoman('L'), 50);
+assert.equal(reverseRoman('C'), 100);
+assert.equal(reverseRoman('D'), 500);
+assert.equal(reverseRoman('M'), 1000);
+assert.equal(reverseRoman('MMMCMXCIX'), 3999);
+assert.equal(reverseRoman('XCIX'), 99);
+assert.equal(reverseRoman('LXXXVIII'), 88);
+assert.equal(reverseRoman('DLXXXVII'), 587);
+assert.equal(reverseRoman('MMCCCLXXXVII'), 2387);
+assert.equal(reverseRoman('MMMDCCCLXXXVIII'), 3888);
+assert.equal(reverseRoman('LXXVI'), 76);
+assert.equal(reverseRoman('VI'), 6);
+assert.equal(reverseRoman('XIII'), 13);
+assert.equal(reverseRoman('XLIV'), 44);
+
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
+    
